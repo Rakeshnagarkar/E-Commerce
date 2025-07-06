@@ -16,43 +16,31 @@ const PORT = process.env.PORT || 4000;
 connectDB();
 connectCloudinary();
 
-// ✅ Allowed frontend origins
+// ✅ Allowed Frontend Origins
 const allowedOrigins = [
-  'https://e-commerce-frontend-k3nbhc5kn-rakesh-s-projects-b4647c1b.vercel.app', 
+  'https://e-commerce-frontend-seven-iota.vercel.app',
 ];
 
-// ✅ CORS Configuration
 const corsOptions = {
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl)
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('CORS policy: Not allowed by server'));
-    }
-  },
+  origin: allowedOrigins,
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
 
-// ✅ Use CORS Middleware
-app.use(cors(corsOptions));
-
-// Middleware
+// ✅ JSON Parser
 app.use(express.json());
 
-// API Routes
+// ✅ API Routes
 app.use('/api/user', userRouter);
 app.use('/api/product', productRouter);
 app.use('/api/cart', cartRouter);
 app.use('/api/order', orderRouter);
 
-// Root Route
+// ✅ Root Endpoint
 app.get('/', (req, res) => {
   res.send('Welcome to the Backend API');
 });
 
-// Start Server
+// ✅ Start Server
 app.listen(PORT, () => {
   console.log(`✅ Server is running on http://localhost:${PORT}`);
 });
