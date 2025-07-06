@@ -13,7 +13,7 @@ import Footer from './Components/Footer'
 import SearchBar from './Components/SearchBar'
 import Verify from './Pages/Verify'
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
