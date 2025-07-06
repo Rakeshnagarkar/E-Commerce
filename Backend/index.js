@@ -18,8 +18,7 @@ connectCloudinary();
 
 // ✅ Allowed frontend origins
 const allowedOrigins = [
-  'http://localhost:3000', 
-  'https://e-commerce-backend-seven-blond.vercel.app', 
+  'https://e-commerce-frontend-k3nbhc5kn-rakesh-s-projects-b4647c1b.vercel.app', 
 ];
 
 // ✅ CORS Configuration
