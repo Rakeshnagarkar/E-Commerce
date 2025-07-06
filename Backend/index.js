@@ -26,6 +26,9 @@ const corsOptions = {
   credentials: true,
 };
 
+// ✅ CORS
+app.use(cors(corsOptions));
+
 // ✅ JSON Parser
 app.use(express.json());
 
