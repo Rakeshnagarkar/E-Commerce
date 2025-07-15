@@ -52,7 +52,7 @@ const placeOrder = async (req, res) => {
 
 const placeOrderStripe = async (req, res) => {
 
-    const origin = req.headers.origin || 'http://localhost:5173';
+    const origin = req.headers.origin || process.env.FRONTEND_URL;
     
     try {
 
