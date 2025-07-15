@@ -16,7 +16,7 @@ connectCloudinary();
 
 // Middleware
 app.use(cors({
-  origin: 'https://e-commerce-frontend-3qva.onrender.com',
+  origin: ['https://e-commerce-frontend-3qva.onrender.com', 'https://e-commerce-admin-tamr.onrender.com'],
   credentials: true, // Only if you're using cookies or sessions
 }));
 
