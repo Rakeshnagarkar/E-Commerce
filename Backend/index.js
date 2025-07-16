@@ -8,11 +8,26 @@ import productRouter from './routes/productRoute.js';
 import cartRouter from './routes/cartRoutes.js';
 import orderRouter from './routes/orderRoute.js';
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 // App Config
 const app = express();
 const PORT = process.env.PORT || 4000;
 connectDB();
 connectCloudinary();
+
+// Required if using ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from Frontend/dist
+app.use(express.static(path.join(__dirname, '../Frontend/dist')));
+
+// Handle all other routes with index.html (for React Router)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../Frontend/dist/index.html'));
+});
 
 // Middleware
 app.use(cors({
