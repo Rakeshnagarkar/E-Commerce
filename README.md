@@ -38,8 +38,8 @@ Backend (Render): [Click Here](https://e-commerce-backend-jgm6.onrender.com)
 
 ## 📸 Working Video
 
-[Click Here To Watch Working Tutorial (User)](https://drive.google.com/file/d/1-KNPVwIqLkQ6WQObIvxl-ZAoILdqnWMH/view?usp=sharing) 
-[Click Here To Watch Working Tutorial (Admin_Panel)](https://drive.google.com/file/d/1qQ0aP1Wx_UAc9aFXm7LxWBvfcC1UoVqX/view?usp=sharing) 
+- **USERS_VIEW** - [Click Here To Watch Working Tutorial](https://drive.google.com/file/d/1-KNPVwIqLkQ6WQObIvxl-ZAoILdqnWMH/view?usp=sharing) 
+- **ADMIN'S_VIEW** - [Click Here To Watch Working Tutorial](https://drive.google.com/file/d/1qQ0aP1Wx_UAc9aFXm7LxWBvfcC1UoVqX/view?usp=sharing) 
 
 ---
 
