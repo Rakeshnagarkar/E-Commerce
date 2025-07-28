@@ -13,9 +13,9 @@ Backend (Render): [Click Here](https://e-commerce-backend-jgm6.onrender.com)
 
 ## 🧰 Technologies Used
 
-- **Frontend**: React.js, JavaScript, TailwindCSS, Redux Toolkit, React Router  
-- **Backend**: Node.js, Express.js, MongoDB  
-- **Other Tools**: Cloudinary (for image upload), Vercel (frontend hosting), Render (backend hosting), RESTful APIs
+- **Frontend**: React.js, JavaScript, TailwindCSS, React Router, Context API
+- **Backend**: Node.js, Express.js, MongoDB, JWT
+- **Other Tools**: Cloudinary (for image upload), Render (frontend hosting), Render (backend hosting), RESTful APIs
 
 ---
 
